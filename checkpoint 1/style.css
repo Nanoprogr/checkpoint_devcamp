@@ -1,0 +1,73 @@
+.gridOne{
+    display: grid;
+    width: 500px; /*para igualar con el resto de la pagina*/
+    grid-template-columns: 1fr 1fr;
+}
+.gridTwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    width: 500px; /*para igualar con el resto de la pagina*/
+}
+.uno{
+    background-color: red;
+}
+.dos{
+    background-color: blue;
+}
+.tres{
+    background-color: yellow;
+}
+.gridThree{
+    display: grid;
+    width: 500px;
+    height: 300px;
+    grid-template-rows: 1fr 3fr;
+}
+.tresdos img{
+    width: 500px;
+    height: 225px;
+    object-fit: cover;
+    background-color: aquamarine;
+}
+.tresuno{
+    background-color: blueviolet;
+}
+.gridFour{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 500px;
+    background-color: green;
+}
+#cuatrodos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.gridFive{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 500px;
+    background-color: antiquewhite;
+}
+#cincodos{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.img1{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.img2{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.gridSix{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    width: 500px;
+    background-color: lightgray;
+}
+.font{
+    font-family: Sixtyfour;
+}
