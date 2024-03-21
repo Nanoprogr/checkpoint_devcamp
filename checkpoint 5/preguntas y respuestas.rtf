@@ -1,0 +1,129 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang3082{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs22\lang10\'bfQu\'e9 es un condicional?\b0\par
+
+\pard\sa200\sl276\slmult1\qj Un condicional es utilizado para ejecutar una parte del codigo si se cumple una condici\'f3n espec\'edfica, en otras palabras, eval\'faa que algo sea verdad y de ser as\'ec, procede a ejecutar un bloque de c\'f3digo,\par
+En Python estos condicionales usan la sintaxys \b if\b0 , seguida de la condicion que se evaluar\'e1.\par
+Un ejemplo b\'e1sico ser\'eda el siguiente:\par
+
+\pard\sl240\slmult1\qj\tab\tab x = 20\par
+\tab\tab if x > 5:\par
+\tab\tab     print('x es mayor que 5')\par
+
+\pard\sa200\sl276\slmult1\qj\par
+En este ejemplo se asigna a la variable x con un valor de 20, luego se aplica el condicional, el que eval\'faa si x es mayor que 5, al ser correcta esa condici\'f3n, entocnes permite que se ejecute el bloque programado debajo de este que en este caso imprime ' x es mayor que 5'\par
+Ahora, los condicionales tambien tienen la opci\'f3n de ejecutar un bloque de c\'f3digo, en caso de que la condicion no se cumple, para esto se utiliza la sintaxys \b else\b0 , utilizando el ejemplo anterior:\par
+
+\pard\sl240\slmult1\qj\tab\tab x = 20\par
+\tab\tab if x > 5:\par
+\tab\tab     print('x es mayor que 5')\par
+\tab\tab else :\par
+\tab\tab     print('x es menor o igual a 5')\par
+\par
+En este caso de no cumplirse la condicion establecida, el bloque que se ejecuta ser\'eda el de else, esto imprimir\'eda 'x es menor o igual a 5', en caso de que x tome un valor menor o igual a 5.\par
+\par
+Los condicionales tambien se pueden encadenar. esto es hacer que se evaluen diferentes condiciones en un mismo bloque de c\'f3digo, para encadenar condiciones utilizamos \b elif\b0 , esto le dice al programa que tambien evalue esa condicion, y en caso de cumplirla tendr\'e1 su propio bloque para ejecutar, por ejemplo:\par
+\par
+\tab\tab x = 25\par
+\tab\tab if x > 20:\par
+\tab\tab     print('x es mayor que 20')\par
+\tab\tab elif x > 10:\par
+\tab\tab     print('x es mayor que 10')\par
+\tab\tab elif x > 5:\par
+\tab\tab     print('x es mayor que 5')\par
+\tab\tab else :\par
+\tab\tab     print('x es menor o igual a 5')\par
+\par
+en este caso tenemos diferentes condiciones a ser evaluadas, y cada una tiene su propio codigo que se ejecutar\'e1 seg\'fan se cumpla cada condicion, una vez se cumpla una condicion, se ejecuta el bloque asignado y el condicional salta al final.\par
+\par
+\b\'bfCu\'e1les son los diferentes tipos de bucles en Python? \'bfPor qu\'e9 son \'fatiles?\b0\par
+\par
+En Python tenemos dos tipos principales de bucles, los que son el \b for \b0  y el \b while\b0 , los veremos cada uno, por separado:\par
+\par
+el bucle \b for\b0 : este bucle se usa para recorrer una lista, tupla, diccionario o cualquier objeto que permita una iteracci\'f3n, este bucle es usado cuando tenemos conocimento de cuantas veces necesitamos q se ejecute repita el c\'f3digo y para cada elemento de la secuencia se ejecuta un bloque de codigo. su sintaxys es \b for (elemento) in (secuencia)\b0 , donde elemento es el nombre que nosotros le asignamos a la variable que recorrera  la secuencia, y secuencia es el objeto al que vamos a recorrer, esto entonces dice que por cada valor que tengamos en la secuencia, elemento tomar\'e1 ese valor y realizara una acci\'f3n. veamos un ejemplo:\par
+\tab\tab my_nums = [1, 2, 3, 4, 5]\par
+\tab\tab for num in my_nums:\par
+\tab\tab     print(num)\par
+\par
+En este ejemplo, tenemos que la variable my_nums es una lista de numeros del 1 al 5, luego creamos nuestro bucle para recorrer esta lista, asignandole el valor de cada elemento de esa lista a num, y luego de eso decimos que por cada valor que se le asigne a num se imprima. \par
+\par
+el bucle \b while\b0 ; este bucle se usa para secuencias infinitas (en este caso no queremos que sea infinito, es solo que no se tiene conocimeinto de cuantas veces debemos repetir el codigo), el bucle while nos permite ejecutar una secuencia tantas veces sea necesario mientras se cumple una condici\'f3n, esto quiere decir que, a menos que la condici\'f3n ocurra, el bucle no se detendra, infinito es el t\'e9rmino, y S\'cd, es tan prominente como se lee, la sintaxys es \b while (condicion):\b0  si la condici\'f3n es verdadera, el codigo se seguira ejecutando, hasta que la condicion sea falsa, el bucle se rompa, y continue con el resto del programa.veamos un ejemplo:\par
+\par
+\tab\tab contador = 0\par
+\tab\tab while contador < 5\par
+\tab\tab     print(contador)\par
+\tab\tab     contador += 1\par
+\par
+en este ejemplo, tenemos una variable contador a la que se le asigna el valor de 0, este contador es evaluado por el bucle while el que tiene la condici\'f3n de que mientras el contador sea menor que 5 pues imprimira el valro del contador, pero adem\'e1s, a la variable contador la incrementar\'e1 en 1 cada vez que el bucle se ejecute, por lo tanto, al ejecutarlo, el primer recorrido imprimira 0 y sumara 1 a contador, que quedar\'e1 en 1, en el segundo recorrido evaluar\'e1 contador, imprimira 1 y le sumara uno mas, dejando contador en 2, asi sucesivamente, hasta que contador tome el valor de 5, en ese caso la condicion del bucle se hace falsa, ya que contador no es emnor que 5, y se romper\'e1, o terminar\'e1, y continuara con el resto de c\'f3digo. \par
+\par
+\b\'bfQu\'e9 es una lista por comprensi\'f3n en Python?\par
+\par
+\b0  la lista de compresi\'f3n en Python se usa como una abreviatura de c\'f3digo para crear listas (tuplas diccionarios) donde necesitamos especificar ciertas condiciones para que el valor sea parte de la lista, es decir es la manera de hacer en una linea de c\'f3digo q se cree una lista donde cada valor cumple una condici\'f3n, por ejemplo:\par
+\par
+\tab\tab my_sqrt_num = [num**2 for num in range(1, 11) if num%2==0]\par
+\par
+En este ejemplo estamos creando una lista que nos dice que generara un valor num, este valor numprimero estara dentro del rango de 1 a 10 (el 11 no se incluye por index) ahora a cada valor en ese rango evaluar\'e1 si cumple con que sea divisible entre dos (esto con la evaluacion del modulo dos igual a cero, y luego que cumpla con esas condiciones dice que a ese valor lo elevaremos al cuadrado, por lo que esto nos dara una lista donde obtenemos [4,  16, 36, 64, 100]\par
+\par
+esto se puede realizar con diferentes lineas de c\'f3digo, sin embargo de esta manera se hace mas corto nuestro programa, y lo hace mas eficiente. \par
+\par
+\b\'bfQu\'e9 es un argumento en Python?\b0\par
+\par
+los argumentos son declaraciones que se hacen en las funciones que creamos en Python, esto quiere decri que son los datos de entrada a nuestra funci\'f3n, por ejemplo;\par
+\par
+\tab\tab def my_function (valor1, valor2):\par
+\par
+En este caso valor1 y valor 2 son nustros argumentos para esta funci\'f3n.\par
+los argumento tienen diferentes tipos, estan los de posisici\'f3n, que hacen que la entrada de los valores a nuestra funcion se tomen como el se\'f1alado, siguiendo el ejemplo anterior:\par
+\par
+\tab\tab def my_function (valor1, valor2):\par
+\tab\tab\tab print(f'ingreso\{valor1\} y luego \{valor2\})\par
+\tab\tab my_function (9 , 8)\par
+los argumentos con los que llamamos a la funcion tomaran valor1 como el 9 y valro2 como el 8, porque fue en la posicion en la que los llamamos.\par
+\par
+Los argumentos por palabra clave, son aquello que especificamos directamente al momento de llamar la funcion, por ejemplo\par
+\tab\tab def my_function (valor1, valor2):\par
+\tab\tab\tab print(f'ingreso\{valor1\} y luego \{valor2\})\par
+\tab\tab my_function (valor2 = 9 ,valor1 = 8)\par
+Esto hace que, independiente del orden en el que colocamos los argumentos al momento de llamar a la funci\'f3n, se asigne el valor de 9 a valor2 y 8 al valor1.\par
+\par
+y los argumentos por default que son los especificados directamente en la definici\'f3n de la funci\'f3n, por ejemplo\par
+\tab\tab def my_function (valor1, valor2 =9):\par
+\tab\tab\tab print(f'ingreso\{valor1\} y luego \{valor2\})\par
+\tab\tab my_function ( 8)\par
+Este solo requiere que se necesite un valor cuando se llama a la funcion, teniendo en cuenta que en la definici\'f3n de esa funci\'f3n se coloco valor2 con un valor de 9 por default. \par
+\par
+\b\'bfQu\'e9 es una funci\'f3n Lambda en Python?\b0\par
+\par
+La funci\'f3n lambda, es una funci\'f3n rapida, que no requiere la declaracion \b def \b0 para creace, que ayuda a simplificar procesos, esta funci\'f3n es generalmente asociada a una variable, y esta variable puede ser usada en otras grandes funciones declaradas. pero eso no le quita su caracter de funcion. un ejemplo siple de lambda seria:\par
+\par
+\tab\tab my_lambda = lambda x , y: f' tus numeros son \{x\} y tambien \{y\} '\par
+\tab\tab def responder(lbd):\par
+\tab\tab     print(f'para responderte \{lbd\}')\par
+\tab\tab responder(my_lambda(8, 9))\par
+\par
+la funci\'f3n lambda en este caso, es una funcion que toma dos argumentos y los formatea dentro de una string, esta funcion es asignada a una variable llamada my_lambda, luego se define una funcion llamada responder en la cual se ejecuta un print que tiene un string formateado que utiliza su argumento (en este caso lbd), luego al momento de llamar la funcion definida responder, el argumento que le damos es la variable my_lambda y le damos los valores que queremos en esta. en resumen, tenemos una funcion definida a la cual le damos como argumento una variable que tiene asociado una funcion lambda dentro de ella, y termina imprimiendo\b  para responderte tus numero son 8 y tambien 9, \b0 esta impresi\'f3n es el resultado de la llamada de la funci\'f3n responder.\par
+\par
+\b\'bfQu\'e9 es un paquete pip?\par
+\par
+\b0 Estos paquetes son, en palabras sencillas, los accesorios disponibles que podemos usar para nuestro uso o desarrollo de programas en Python, un paquete PIP, es una colecci\'f3n que va dirigida especificamente a ciertas fucniones que podemos usar segun lo que necesitamos. \line\par
+pip es el gestor de paquetes de Python.\par
+\par
+un paquete PIP nos ayuda a simplicar, realizar y desarrollar codigos especificos, estos paquetes estan creados y solo debemos descargarlos e instalarlos, existe una biblioteca gigante de estos paquetes, los cuales segun se necesiten se iran estudiando, esta biblioteca o libreria es el PyPi, un repositorio gigante donde se almacenan la amyoria de estos paquetes pip. \par
+\par
+para instalar el paquete que necesitamos utilizamos el gestor pip, un ejemplo que se ha usado es el paquete Numpy, que nos ayuda entre otras cosas con operaciones matem\'e1ticas.\par
+\par
+\tab\tab pip install Numpy (esto instala el apquete)\par
+para importarlo \par
+\tab\tab import Numpy as np (esto importa el paquete Numpy y le da el alias np)\par
+\par
+y luego por ejemplo simplemente se llama el paquete o justo la aprte que se necesita. \par
+\par
+\tab my_list = [1, 2, 3, 4, 5]\par
+\tab media = np.mean( my_list)\par
+\tab print(media)\par
+esto utiliza mean contenida en el paquete Numpy (con alias np) para sacar la media de la lista. esto es un ejemplo demasiado sencillo pero indica un poco el proceso de instalar importar asociar alias y luego utlizar parte de los paquetes pip.\par
+\par
+
+\pard\sl240\slmult1\qc\par
+}
+ 
