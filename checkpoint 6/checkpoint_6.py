@@ -6,3 +6,5 @@ class Usuario:
 super_usuario = Usuario("nanoprogr","jjj333rrr999")
 print("Nombre de usuario:", super_usuario.usuario)
 print("Contraseña:", super_usuario.contraseña)
+.
+
